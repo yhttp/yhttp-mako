@@ -4,10 +4,10 @@ from mako.lookup import TemplateLookup, exceptions
 
 
 DEFAULT_SETTINGS = '''
-modules:
+modules: makomodules
 cache:
   size: 500
-lookup:
+lookup: templates
 '''
 
 
@@ -26,7 +26,7 @@ def decoratorfactory(template):
 
             try:
                 return t.render(**data)
-            except:
+            except:  # noqa: E722
                 return exceptions.html_error_template().render()
 
         return wrapper
