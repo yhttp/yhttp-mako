@@ -23,6 +23,7 @@ def decoratorfactory(template):
                 data['N_'] = req.translator.ngettext
                 data['P_'] = req.translator.pgettext
                 data['NP_'] = req.translator.pgettext
+                data['l'] = req.locale
 
             try:
                 return t.render(**data)
