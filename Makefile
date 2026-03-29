@@ -9,6 +9,7 @@ PYDEPS_COMMON = \
 	'bddrest >= 6.1, < 7' \
 	'bddcli >= 2.10.1, < 3' \
 	'yhttp-dev >= 3.4.2' \
+	'yhttp-i18n >= 1.4.1, < 2' \
 	'mako'
 
 
