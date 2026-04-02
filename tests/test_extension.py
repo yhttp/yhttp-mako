@@ -5,8 +5,8 @@ from bddrest import status, response
 from yhttp.ext import mako, i18n
 
 
-def test_extension(httpreq, app, mockupfs):
-    tmpfs = mockupfs(**{
+def test_extension(httpreq, app, mktmptree):
+    tmpfs = mktmptree({
         'modules': {},
         'templates': {
             'index.mako': '${foo}'
@@ -31,8 +31,8 @@ def test_extension(httpreq, app, mockupfs):
     assert os.path.exists(f'{tmpfs}/modules/index.mako.py')
 
 
-def test_render_error(httpreq, app, mockupfs):
-    tmpfs = mockupfs(**{
+def test_render_error(httpreq, app, mktmptree):
+    tmpfs = mktmptree({
         'modules': {},
         'templates': {
             'index.mako': '${notdefined}'

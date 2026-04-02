@@ -3,14 +3,14 @@ PKG_NAMESPACE = yhttp.ext.mako
 PKG_NAME = yhttp-mako
 PYTEST_FLAGS = -vv
 PYDEPS_COMMON = \
-	'coveralls' \
-	'freezegun' \
-	'pytest-mock' \
-	'bddrest >= 6.1, < 7' \
-	'bddcli >= 2.10.1, < 3' \
-	'yhttp-dev >= 3.4.2' \
+	'coveralls >= 4.1.0' \
+	'freezegun >= 1.5.5' \
+	'pytest >= 7.4.4, < 8' \
+	'bddrest >= 6.2.3, < 7' \
+	'pytest-fixkit >= 1.0.3' \
 	'yhttp-i18n >= 1.5, < 2' \
 	'mako'
+
 
 
 # Assert the python-makelib version
