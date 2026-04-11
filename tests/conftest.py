@@ -3,12 +3,6 @@ import functools
 import bddrest
 import pytest
 from yhttp.core import Application
-from bddcli.fixtures import bootstrapper_patch
-
-
-@pytest.fixture
-def bddcli_bootpatch():
-    return bootstrapper_patch
 
 
 @pytest.fixture
