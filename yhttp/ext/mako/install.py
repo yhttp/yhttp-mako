@@ -22,6 +22,8 @@ def decoratorfactory(template, data=None):
             req.response.type = 'text/html'
 
             data['req'] = req
+            data['identity'] = req.identity if hasattr(req, 'identity') \
+                else None
             if hasattr(req, 'translator'):
                 data['_'] = req.translator.gettext
                 data['N_'] = req.translator.ngettext
