@@ -18,7 +18,7 @@ with open(
 
 
 dependencies = [
-    'yhttp >= 7.12, < 8',
+    'yhttp >= 7.16.3, < 8',
     'mako >= 1.3.10, < 2',
     'babel >= 2.18, < 3',
 ]

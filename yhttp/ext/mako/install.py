@@ -21,6 +21,7 @@ def decoratorfactory(template, data=None):
             t = app.lookup.get_template(template)
             req.response.type = 'text/html'
 
+            data['req'] = req
             if hasattr(req, 'translator'):
                 data['_'] = req.translator.gettext
                 data['N_'] = req.translator.ngettext

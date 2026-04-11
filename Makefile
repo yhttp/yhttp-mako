@@ -6,7 +6,7 @@ PYDEPS_COMMON = \
 	'coveralls >= 4.1.0' \
 	'freezegun >= 1.5.5' \
 	'pytest >= 7.4.4, < 8' \
-	'bddrest >= 6.2.3, < 7' \
+	'bddrest >= 6.3.3, < 7' \
 	'pytest-fixkit >= 1.0.3' \
 	'yhttp-i18n >= 1.5, < 2' \
 	'mako'
