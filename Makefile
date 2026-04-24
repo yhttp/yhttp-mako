@@ -8,13 +8,13 @@ PYDEPS_COMMON = \
 	'pytest >= 7.4.4, < 8' \
 	'bddrest >= 6.3.3, < 7' \
 	'pytest-fixkit >= 1.0.3' \
-	'yhttp-i18n >= 1.5, < 2' \
+	'yhttp-i18n >= 3.0.0, < 4' \
 	'mako'
 
 
 
 # Assert the python-makelib version
-PYTHON_MAKELIB_VERSION_REQUIRED = 2.2
+PYTHON_MAKELIB_VERSION_REQUIRED = 4
 
 
 # Ensure the python-makelib is installed

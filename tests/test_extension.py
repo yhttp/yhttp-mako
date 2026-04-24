@@ -19,7 +19,6 @@ def test_extension(httpreq, app, mktmptree):
     app.ready()
 
     @app.route()
-    @app.i18n
     @app.template('index.mako')
     def get(req):
         return dict(foo='Foo')
