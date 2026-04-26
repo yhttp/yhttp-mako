@@ -5,7 +5,7 @@ def render(req, template, data):
     app = req.application
     data.update(app.template_globals)
     t = app.lookup.get_template(template)
-    req.response.type = 'text/html'
+    req.response.contenttype = 'text/html'
 
     data['req'] = req
     data['identity'] = req.identity if hasattr(req, 'identity') \
