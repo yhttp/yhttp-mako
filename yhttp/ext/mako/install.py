@@ -1,3 +1,4 @@
+from pymlconf import Meld
 from mako.lookup import TemplateLookup
 
 from .decorator import decoratorfactory
@@ -13,8 +14,7 @@ lookup: templates
 
 def install(app, data=None):
     app.template = decoratorfactory
-    app.settings.merge('mako: {}')
-    app.settings['mako'].merge(DEFAULT_SETTINGS)
+    app.settings |= Meld(DEFAULT_SETTINGS, root='mako')
     app.template_globals = data if data else {}
 
     @app.when
