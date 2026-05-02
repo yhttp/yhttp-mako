@@ -8,7 +8,7 @@ PYDEPS_COMMON = \
 	'pytest >= 7.4.4, < 8' \
 	'bddrest >= 6.3.3, < 7' \
 	'pytest-fixkit >= 1.0.3' \
-	'yhttp-i18n >= 3.0.0, < 4' \
+	'yhttp-i18n >= 5.0.0, < 6' \
 	'mako'
 
 
