@@ -1,4 +1,4 @@
-from pymlconf import Meld
+from snam import Meld
 from mako.lookup import TemplateLookup
 
 from .decorator import decoratorfactory
